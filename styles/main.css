@@ -309,8 +309,52 @@ h1 {
   }
 }
 
-.button.hero {
+.btn-hero {
   color: #fff;
   background: #458ff6;
+}
+
+.hero::before {
+  content: "";
+  background: url(../images/element.svg);
+  position: absolute;
+  width: 135px;
+  height: 115px;
+  margin-left: -60px;
+}
+
+.hero .uk-container {
+  height: calc(100vh - 82px);
+  padding: 0 30px;
+}
+
+@media (min-width: 640px) {
+  .hero .uk-container {
+    padding: 0;
+    height: calc(100vh - 130px);
+    gap: 110px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero .hero-text {
+    max-width: 445px;
+  }
+}
+
+.hero .hero-img img {
+  width: 320px;
+}
+
+@media (min-width: 640px) {
+  .hero .hero-img img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero .hero-img img {
+    width: 693px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

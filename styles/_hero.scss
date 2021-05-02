@@ -1,0 +1,37 @@
+.hero {
+  &::before {
+    content: "";
+    background: url(../images/element.svg);
+    position: absolute;
+    width: 135px;
+    height: 115px;
+    margin-left: -60px;
+  }
+  .uk-container {
+    height: calc(100vh - 82px);
+    padding: 0 30px;
+    @include respond-above(sm) {
+      padding: 0;
+      height: calc(100vh - 130px);
+      gap: 110px;
+    }
+  }
+
+  .hero-text {
+    @include respond-above(sm) {
+      max-width: 445px;
+    }
+  }
+
+  .hero-img {
+    img {
+      width: 320px;
+      @include respond-above(sm) {
+        width: 400px;
+      }
+      @include respond-above(xl) {
+        width: 693px;
+      }
+    }
+  }
+}
