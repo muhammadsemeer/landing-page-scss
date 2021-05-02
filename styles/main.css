@@ -1,30 +1,30 @@
 @font-face {
-  font-family: 'Mulish';
-  src: url("Mulish-Light.woff2") format("woff2"), url("Mulish-Light.woff") format("woff");
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url("Mulish-SemiBold.woff2") format("woff2"), url("Mulish-SemiBold.woff") format("woff");
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url("Mulish-Regular.woff2") format("woff2"), url("Mulish-Regular.woff") format("woff");
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Mulish';
-  src: url("Mulish-Bold.woff2") format("woff2"), url("Mulish-Bold.woff") format("woff");
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -68,9 +68,31 @@ header {
   width: 100%;
 }
 
+header .uk-container {
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 640px) {
   header .uk-container {
+    margin: 0;
     height: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  header .uk-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -126,6 +148,96 @@ header .logo .text {
 @media (min-width: 1600px) {
   header .logo .text {
     font-size: 24px;
+  }
+}
+
+header nav ul {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #458ff6;
+  z-index: 99;
+  -webkit-transition: -webkit-transform ease-in 0.5s;
+  transition: -webkit-transform ease-in 0.5s;
+  transition: transform ease-in 0.5s;
+  transition: transform ease-in 0.5s, -webkit-transform ease-in 0.5s;
+}
+
+@media (min-width: 960px) {
+  header nav ul {
+    background: none;
+    position: relative;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+header nav ul li {
+  margin: 20px 0;
+}
+
+@media (min-width: 960px) {
+  header nav ul li {
+    margin: 0 20px;
+  }
+}
+
+header nav ul li a {
+  font-weight: normal;
+  color: #fff;
+  -webkit-transition: color ease-in 0.2s;
+  transition: color ease-in 0.2s;
+  font-size: 18px;
+}
+
+@media (min-width: 960px) {
+  header nav ul li a {
+    color: rgba(31, 21, 52, 0.5);
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1600px) {
+  header nav ul li a {
+    font-size: 18px;
+  }
+}
+
+header nav ul li a.active {
+  font-weight: bold;
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+  color: #1f1534;
+}
+
+header nav .hamburger {
+  display: inline-block;
+  position: relative;
+  z-index: 1000;
+}
+
+@media (min-width: 960px) {
+  header nav .hamburger {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,14 +11,21 @@
   <body>
     <!-- Header Section -->
     <header>
-      <div class="uk-container uk-flex uk-flex-center uk-flex-middle">
+      <div class="uk-container">
         <div class="logo">
           <span class="icon uk-flex uk-flex-center uk-flex-middle">T</span>
           <span class="text">Trafalgar</span>
         </div>
         <nav>
+          <div class="hamburger">
+            <lottie-player
+              src="./images/icons/menuV4.json"
+              background="transparent"
+              speed="0.5"
+            ></lottie-player>
+          </div>
           <ul>
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="/" class="active">Home</a></li>
             <li><a href="#">Find A Doctor</a></li>
             <li><a href="#">Apps</a></li>
             <li><a href="#">Testinomails</a></li>
@@ -30,6 +37,7 @@
     <!-- Header Section End -->
 
     <script src="./js/uikit.min.js"></script>
-    <script src="./script/main.js"></script>
+    <script src="./js/lottie-player.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
