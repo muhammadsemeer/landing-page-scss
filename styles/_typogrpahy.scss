@@ -85,7 +85,7 @@ p {
       }
     }
     &.left {
-      &::before {
+      &::after {
         left: 0;
       }
     }
