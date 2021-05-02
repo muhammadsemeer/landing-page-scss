@@ -291,4 +291,26 @@ h1 {
     line-height: 32px;
   }
 }
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 35px;
+  color: #458ff6;
+  border: 1px solid #458ff6;
+  border-radius: 55px;
+  font-weight: bold;
+}
+
+@media (min-width: 1600px) {
+  .button {
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+}
+
+.button.hero {
+  color: #fff;
+  background: #458ff6;
+}
 /*# sourceMappingURL=main.css.map */
