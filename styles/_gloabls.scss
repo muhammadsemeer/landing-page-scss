@@ -17,7 +17,7 @@ a:hover {
 
 .uk-flex {
   flex-direction: column;
-  @include respond-above(sm) {
+  @include respond-above(md) {
     flex-direction: row;
   }
 }
