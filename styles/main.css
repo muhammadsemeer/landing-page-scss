@@ -490,4 +490,76 @@ p {
 .info-banner .banner-text {
   max-width: 450px;
 }
+
+.testinomial {
+  margin-top: 100px;
+  background: url(../images/element.svg) no-repeat;
+  background-position: 190px 210px;
+}
+
+.testinomial .testinomial-slide {
+  padding: 15px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #67c3f3 9.06%, #5a98f2 76.74%);
+  border-radius: 24px;
+  position: relative;
+}
+
+.testinomial .testinomial-slide::after {
+  content: "";
+  position: absolute;
+  background: url(../images/element.svg) center no-repeat;
+  width: 130px;
+  height: 115px;
+  top: -1px;
+  right: 0;
+}
+
+.testinomial .testinomial-slide * {
+  color: #fff;
+}
+
+.testinomial .testinomial-slide .section-titles .underline::after {
+  background: #fff;
+}
+
+.testinomial .testinomial-slide .feedback {
+  margin-top: 50px;
+}
+
+@media (min-width: 960px) {
+  .testinomial .testinomial-slide .feedback {
+    gap: 140px;
+  }
+}
+
+.testinomial .testinomial-slide .feedback .client h5 {
+  margin: 0;
+}
+
+.testinomial .testinomial-slide .feedback .client p {
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.testinomial .testinomial-slide .feedback .client img {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+  .testinomial .testinomial-slide .feedback .client img {
+    width: 141px;
+    height: 141px;
+  }
+}
+
+.testinomial .testinomial-slide .feedback .comment {
+  max-width: 420px;
+}
+
+.testinomial .testinomial-slide .feedback .comment p {
+  opacity: 0.9;
+}
 /*# sourceMappingURL=main.css.map */
