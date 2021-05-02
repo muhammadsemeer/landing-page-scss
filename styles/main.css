@@ -29,4 +29,38 @@
   font-style: normal;
   font-display: swap;
 }
+
+html {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.uk-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .uk-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=main.css.map */
