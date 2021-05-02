@@ -1,5 +1,10 @@
 // Styles for h1
 
+h1,
+h3 {
+  font-family: $primary-font;
+}
+
 h1 {
   font-size: 32px;
   line-height: 48px;
@@ -15,7 +20,22 @@ h1 {
   }
 }
 
+h3 {
+  font-size: 26px;
+  line-height: 48px;
+  font-weight: $font-bold;
+  @include respond-above(sm) {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  @include respond-above(xl) {
+    font-size: 36px;
+    line-height: 56px;
+  }
+}
+
 p {
+  font-weight: $font-light;
   @include respond-above(sm) {
     font-size: 17px;
     line-height: 28px;
@@ -23,5 +43,35 @@ p {
   @include respond-above(lg) {
     font-size: 21px;
     line-height: 32px;
+  }
+}
+
+.section-titles {
+  h3 {
+    position: relative;
+  }
+  p {
+    margin-top: 50px;
+  }
+  .underline {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -26px;
+      width: 56px;
+      height: 2px;
+      background: #000;
+    }
+    &.normal {
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &.left {
+      &::before {
+        left: 0;
+      }
+    }
   }
 }
