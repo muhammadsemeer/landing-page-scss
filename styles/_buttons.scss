@@ -17,3 +17,10 @@
   color: #fff;
   background: $primary-color;
 }
+
+.download {
+  &::after {
+    content: url(../images/icons/down-arrow.svg);
+    margin: 0 7.5px;
+  }
+}
