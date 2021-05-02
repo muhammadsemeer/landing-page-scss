@@ -5,6 +5,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
     @include respond-above(sm) {
       margin: 0;
       height: 100px;
@@ -13,6 +14,7 @@ header {
       justify-content: center;
     }
     @include respond-above(xl) {
+      justify-content: space-evenly;
       height: 130px;
     }
   }
