@@ -1,0 +1,48 @@
+header {
+  width: 100%;
+  .uk-container {
+    @include respond-above(sm) {
+      height: 100px;
+    }
+    @include respond-above(xl) {
+      height: 130px;
+    }
+  }
+  //   Header Logo
+  .logo {
+    display: flex;
+    align-items: center;
+    @include respond-above(sm) {
+      width: 400px;
+    }
+    * {
+      margin: 0 6px;
+    }
+    // Logo Icon
+    .icon {
+      width: 30px;
+      height: 30px;
+      font-weight: $font-bold;
+      color: #fff;
+      border-radius: 50%;
+      background-color: $primary-color;
+      font-size: 18px;
+      @include respond-above(xl) {
+        font-size: 26px;
+        width: 41px;
+        height: 41px;
+      }
+    }
+
+    // Logo Text
+    .text {
+      font-size: 20px;
+      color: $logo-text;
+      font-weight: $font-bold;
+
+      @include respond-above(xl) {
+        font-size: 24px;
+      }
+    }
+  }
+}

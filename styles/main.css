@@ -63,4 +63,69 @@ a:hover {
             flex-direction: row;
   }
 }
+
+header {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  header .uk-container {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  header .uk-container {
+    height: 130px;
+  }
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 640px) {
+  header .logo {
+    width: 400px;
+  }
+}
+
+header .logo * {
+  margin: 0 6px;
+}
+
+header .logo .icon {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #458ff6;
+  font-size: 18px;
+}
+
+@media (min-width: 1600px) {
+  header .logo .icon {
+    font-size: 26px;
+    width: 41px;
+    height: 41px;
+  }
+}
+
+header .logo .text {
+  font-size: 20px;
+  color: #233348;
+  font-weight: bold;
+}
+
+@media (min-width: 1600px) {
+  header .logo .text {
+    font-size: 24px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
