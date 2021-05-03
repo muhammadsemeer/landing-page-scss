@@ -629,7 +629,7 @@ p {
 
 @media (min-width: 1600px) {
   .media-card {
-    background-position: 172px 55px, 170% -300%;
+    background-position: 172px 55px, 170% -90%;
   }
 }
 
