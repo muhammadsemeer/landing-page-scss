@@ -10,7 +10,6 @@
     padding: 20px 50px;
     font-size: 18px;
   }
-
 }
 
 .btn-hero {
@@ -22,5 +21,17 @@
   &::after {
     content: url(../images/icons/down-arrow.svg);
     margin: 0 7.5px;
+  }
+}
+
+.read-more {
+  padding: 15px 0;
+  border: none;
+
+  &::after {
+    content: url(../images/icons/right-arrow.svg);
+    margin: 0 7.5px;
+    transition: transform ease-in 0.5s;
+    position: absolute;
   }
 }
