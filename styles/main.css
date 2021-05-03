@@ -401,6 +401,7 @@ p {
 .read-more {
   padding: 15px 0;
   border: none;
+  font-weight: 600;
 }
 
 .read-more::after {
