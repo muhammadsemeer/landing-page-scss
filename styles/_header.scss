@@ -125,9 +125,6 @@ header {
       @include respond-above(md) {
         display: none;
       }
-      &.active {
-        background: url(../images/icons/close.svg) center no-repeat;
-      }
     }
   }
 }

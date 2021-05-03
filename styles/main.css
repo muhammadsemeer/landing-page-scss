@@ -258,10 +258,6 @@ header nav .hamburger {
   }
 }
 
-header nav .hamburger.active {
-  background: url(../images/icons/close.svg) center no-repeat;
-}
-
 h1,
 h3,
 h5 {
