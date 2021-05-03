@@ -5,10 +5,10 @@ humburger.addEventListener("click", (event) => {
   let isOpen = navList.classList.contains("active");
   if (!isOpen) {
     navList.classList.add("active");
-    event.target.classList.add("active");
+    event.target.style.cssText = `background: url(../images/icons/close.svg) center no-repeat;`;
   } else {
     navList.classList.remove("active");
-    event.target.classList.remove("active");
+    event.target.style.cssText = `background: url(../images/icons/menu.svg) center no-repeat;`;
   }
 });
 
