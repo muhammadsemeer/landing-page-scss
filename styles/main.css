@@ -398,6 +398,21 @@ p {
   margin: 0 7.5px;
 }
 
+.read-more {
+  padding: 15px 0;
+  border: none;
+}
+
+.read-more::after {
+  content: url(../images/icons/right-arrow.svg);
+  margin: 0 7.5px;
+  -webkit-transition: -webkit-transform ease-in 0.5s;
+  transition: -webkit-transform ease-in 0.5s;
+  transition: transform ease-in 0.5s;
+  transition: transform ease-in 0.5s, -webkit-transform ease-in 0.5s;
+  position: absolute;
+}
+
 .hero::before {
   content: "";
   background: url(../images/element.svg);
@@ -452,6 +467,25 @@ p {
   -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
           box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
+}
+
+.card-container .card.media {
+  padding: 0;
+}
+
+.card-container .card.media img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-container .card.media .content {
+  padding: 0 20px 20px;
+}
+
+@media (min-width: 1600px) {
+  .card-container .card.media .content {
+    padding: 0 40px 40px;
+  }
 }
 
 .icon-card {
@@ -576,5 +610,29 @@ p {
 
 .testinomial .swiper-pagination * {
   margin: 22px 5px;
+}
+
+.media-card {
+  padding: 15px;
+  margin-top: 100px;
+  background: url(../images/element.svg) no-repeat, url(../images/curved-vector-bg.svg) no-repeat;
+  background-size: 131px 115px, 1011px 767px;
+  background-position: -10px 136px, 0 0;
+}
+
+@media (min-width: 640px) {
+  .media-card {
+    background-position: 0 0, 450px -160px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .media-card {
+    background-position: 172px 55px, 170% -300%;
+  }
+}
+
+.media-card .card-container {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=main.css.map */
