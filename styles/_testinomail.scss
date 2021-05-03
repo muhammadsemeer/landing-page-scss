@@ -2,71 +2,84 @@
   margin-top: 100px;
   background: url(../images/element.svg) no-repeat;
   background-position: 190px 210px;
+  position: relative;
 
-  .testinomial-slide {
-    padding: 15px;
-    background: linear-gradient(
-      208.18deg,
-      $primary-light 9.05%,
-      $primary-light 9.06%,
-      $primary-dark 76.74%
-    );
-    border-radius: 24px;
-    position: relative;
+  .swiper-container {
+    .swiper-slide {
+      width: 90%;
+      margin: 0 auto;
+      .testinomial-slide {
+        padding: 15px;
+        background: linear-gradient(
+          208.18deg,
+          $primary-light 9.05%,
+          $primary-light 9.06%,
+          $primary-dark 76.74%
+        );
+        border-radius: 24px;
+        position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      background: url(../images/element.svg) center no-repeat;
-      width: 130px;
-      height: 115px;
-      top: -1px;
-      right: 0;
-    }
-    * {
-      color: #fff;
-    }
-
-    .section-titles {
-      .underline {
         &::after {
-          background: #fff;
+          content: "";
+          position: absolute;
+          background: url(../images/element.svg) center no-repeat;
+          width: 130px;
+          height: 115px;
+          top: -1px;
+          right: 0;
+        }
+        * {
+          color: #fff;
+        }
+
+        .section-titles {
+          .underline {
+            &::after {
+              background: #fff;
+            }
+          }
+        }
+        .feedback {
+          margin-top: 50px;
+          @include respond-above(md) {
+            gap: 140px;
+          }
+
+          .client {
+            h5 {
+              margin: 0;
+            }
+            p {
+              margin-top: 0;
+              opacity: 0.8;
+            }
+            img {
+              width: 100px;
+              height: 100px;
+              @include respond-above(sm) {
+                width: 141px;
+                height: 141px;
+              }
+              border: 3px solid #fff;
+              border-radius: 50%;
+            }
+          }
+
+          .comment {
+            max-width: 420px;
+
+            p {
+              opacity: 0.9;
+            }
+          }
         }
       }
     }
-    .feedback {
-      margin-top: 50px;
-      @include respond-above(md) {
-        gap: 140px;
-      }
-
-      .client {
-        h5 {
-          margin: 0;
-        }
-        p {
-          margin-top: 0;
-          opacity: 0.8;
-        }
-        img {
-          width: 100px;
-          height: 100px;
-          @include respond-above(sm) {
-            width: 141px;
-            height: 141px;
-          }
-          border: 3px solid #fff;
-          border-radius: 50%;
-        }
-      }
-
-      .comment {
-        max-width: 420px;
-
-        p {
-          opacity: 0.9;
-        }
-      }
+  }
+  .swiper-pagination {
+    position: relative;
+    * {
+      margin: 22px 5px;
     }
   }
 }
