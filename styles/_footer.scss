@@ -1,0 +1,73 @@
+footer {
+  * {
+    color: #fff;
+  }
+  h5 {
+    margin: 10px 0;
+  }
+  .copy {
+    font-size: 11px;
+    @include respond-above(sm) {
+      font-size: 16px;
+    }
+  }
+  margin-top: 150px;
+  background: linear-gradient(
+    183.41deg,
+    $primary-light -8.57%,
+    $primary-dark 82.96%
+  );
+  padding: 50px 25px;
+  @include respond-above(sm) {
+    margin-top: 200px;
+  }
+  @include respond-above(md) {
+    padding: 0;
+  }
+  .uk-container {
+    min-height: 432px;
+    @include respond-above(md) {
+      gap: 100px;
+    }
+    @include respond-above(xl) {
+      gap: 145px;
+    }
+  }
+  .branding {
+    max-width: 391px;
+    .logo {
+      display: flex;
+      align-items: center;
+      @include respond-above(sm) {
+        width: 400px;
+      }
+      * {
+        margin: 0 6px;
+      }
+      // Logo Icon
+      .icon {
+        width: 30px;
+        height: 30px;
+        font-weight: $font-bold;
+        color: $primary-color;
+        border-radius: 50%;
+        background-color: #fff;
+        font-size: 18px;
+        @include respond-above(xl) {
+          font-size: 26px;
+          width: 41px;
+          height: 41px;
+        }
+      }
+    }
+  }
+  ul {
+    a {
+      font-size: 18px;
+      line-height: 38px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
