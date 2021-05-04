@@ -393,6 +393,10 @@ p {
   background: #458ff6;
 }
 
+.btn-hero:hover {
+  color: #fff;
+}
+
 .download::after {
   content: url(../images/icons/down-arrow.svg);
   margin: 0 7.5px;

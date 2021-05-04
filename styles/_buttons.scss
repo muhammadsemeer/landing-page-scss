@@ -15,6 +15,9 @@
 .btn-hero {
   color: #fff;
   background: $primary-color;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .download {
